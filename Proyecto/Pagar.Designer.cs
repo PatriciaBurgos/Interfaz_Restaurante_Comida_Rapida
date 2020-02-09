@@ -45,7 +45,11 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.button3 = new System.Windows.Forms.Button();
 			this.label8 = new System.Windows.Forms.Label();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.groupBox1.SuspendLayout();
+			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -63,7 +67,7 @@
 			this.radioButton1.AutoSize = true;
 			this.radioButton1.Checked = true;
 			this.radioButton1.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.radioButton1.Location = new System.Drawing.Point(77, 132);
+			this.radioButton1.Location = new System.Drawing.Point(16, 19);
 			this.radioButton1.Name = "radioButton1";
 			this.radioButton1.Size = new System.Drawing.Size(81, 23);
 			this.radioButton1.TabIndex = 1;
@@ -75,7 +79,7 @@
 			// 
 			this.radioButton2.AutoSize = true;
 			this.radioButton2.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.radioButton2.Location = new System.Drawing.Point(77, 155);
+			this.radioButton2.Location = new System.Drawing.Point(16, 48);
 			this.radioButton2.Name = "radioButton2";
 			this.radioButton2.Size = new System.Drawing.Size(72, 23);
 			this.radioButton2.TabIndex = 2;
@@ -86,7 +90,7 @@
 			// 
 			this.radioButton3.AutoSize = true;
 			this.radioButton3.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.radioButton3.Location = new System.Drawing.Point(260, 155);
+			this.radioButton3.Location = new System.Drawing.Point(19, 48);
 			this.radioButton3.Name = "radioButton3";
 			this.radioButton3.Size = new System.Drawing.Size(95, 23);
 			this.radioButton3.TabIndex = 5;
@@ -98,7 +102,7 @@
 			this.radioButton4.AutoSize = true;
 			this.radioButton4.Checked = true;
 			this.radioButton4.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.radioButton4.Location = new System.Drawing.Point(260, 132);
+			this.radioButton4.Location = new System.Drawing.Point(19, 19);
 			this.radioButton4.Name = "radioButton4";
 			this.radioButton4.Size = new System.Drawing.Size(77, 23);
 			this.radioButton4.TabIndex = 4;
@@ -220,11 +224,33 @@
 			this.label8.Size = new System.Drawing.Size(0, 19);
 			this.label8.TabIndex = 16;
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.radioButton1);
+			this.groupBox1.Controls.Add(this.radioButton2);
+			this.groupBox1.Location = new System.Drawing.Point(61, 108);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(118, 100);
+			this.groupBox1.TabIndex = 17;
+			this.groupBox1.TabStop = false;
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Controls.Add(this.radioButton4);
+			this.groupBox2.Controls.Add(this.radioButton3);
+			this.groupBox2.Location = new System.Drawing.Point(244, 108);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(136, 100);
+			this.groupBox2.TabIndex = 18;
+			this.groupBox2.TabStop = false;
+			// 
 			// Pagar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
+			this.Controls.Add(this.groupBox2);
+			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.label8);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.label7);
@@ -235,16 +261,16 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.radioButton3);
-			this.Controls.Add(this.radioButton4);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.radioButton2);
-			this.Controls.Add(this.radioButton1);
 			this.Controls.Add(this.label1);
 			this.Name = "Pagar";
 			this.Size = new System.Drawing.Size(797, 498);
 			this.Load += new System.EventHandler(this.Pagar_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -268,5 +294,7 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.GroupBox groupBox2;
 	}
 }
